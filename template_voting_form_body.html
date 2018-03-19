@@ -2,6 +2,7 @@
     <input type="%POLL_CHECKBOX_RADIO%" id="poll-answer-%POLL_ANSWER_ID%" name="poll_%POLL_ID%" value="%POLL_ANSWER_ID%" class="input-radio"
     />
     <div class="poll-button">
+        <div class="poll-icon-question" id="poll-icon-%POLL_ANSWER_ID%"></div>
         <input type="button" name="vote" value="%POLL_ANSWER%" class="Buttons" onclick="document.getElementById('poll-answer-%POLL_ANSWER_ID%').checked=true; poll_vote(%POLL_ID%);location.href = '/';location.href = '/test';"
         />
     </div>
