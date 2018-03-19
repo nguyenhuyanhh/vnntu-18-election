@@ -1,3 +1,0 @@
-qid = 20 Quach Quan
-aid = 44 Yes
-aid = 45 No

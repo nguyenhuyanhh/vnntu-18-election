@@ -22,17 +22,17 @@
     padding: 0.5em;
     text-align: center;
 }
-.poll-icon {
+/* .poll-icon {
     width: 300px;
     height:300px;
-}
+} */
 .wp-poll-cell {
     width: 50%;
     display: inline-block;
     white-space: normal;
 }
 .wp-polls .Buttons {
-width: 100%;
+    width: 100%;
     padding: 0.5em;
     box-shadow: none;
     font-size: 2em;
@@ -40,39 +40,32 @@ width: 100%;
     border: none;
 }
 
-.poll-head{
+.poll-head {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.1em;
-   margin: 2em 0 0.2em;
+    margin: 2em 0 0.2em;
 }
 
 /*VOTE BUTTONS*/
-.wp-polls .Buttons.button-YES{
-    background: #e7b220;
-    color: #FFF;
-transition: all 0.3s;
-}
-.wp-polls .Buttons.button-YES:hover{
+.wp-polls .Buttons:hover{
     background: #f0cf0c;
     color: #FFF;
-transition: all 0.3s;
+    transition: all 0.3s;
 }
-.wp-polls .Buttons.button-NO {
+.wp-polls .Buttons {
     background: #AAA;
     color: #FFF;
-margin-left:-3px;
-transition: all 0.3s;
+    margin-left:-3px;
+    transition: all 0.3s;
 }
-.wp-polls .Buttons.button-NO:hover {
-    background: #CCC;
-    color: #FFF;
-transition: all 0.3s;
+input.input-radio {
+    display: none;
 }
 
 /*RESULT BLOCK*/
-.poll-conclusion-YES{
+.poll-conclusion{
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -80,7 +73,7 @@ transition: all 0.3s;
     background: #F1D17B;
     color: #FFF;
 }
-.poll-answer-YES{
+.poll-answer{
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -88,34 +81,18 @@ transition: all 0.3s;
     background: #EAB420;
     color: #FFF;
 }
-.poll-conclusion-NO{
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1.1em;
-    background: #CCC;
-    color: #FFF;
-}
-.poll-answer-NO{
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 3em;
-    background: #AAA;
-    color: #FFF;
-}
 
 
 /*SET ICON BACKGROUND*/
 #poll-icon-16 {
-background: url('http://i.imgur.com/mufrgkF.png');
+    background: url('http://i.imgur.com/mufrgkF.png');
 }
 #poll-icon-17 {
-background: url('http://i.imgur.com/7RDItk0.png');
+    background: url('http://i.imgur.com/7RDItk0.png');
 }
 #poll-icon-18 {
-background: url('http://i.imgur.com/Hz0UBaT.png');
+    background: url('http://i.imgur.com/Hz0UBaT.png');
 }
 #poll-icon-19 {
-background: url('http://i.imgur.com/PU6rCxO.png');
+    background: url('http://i.imgur.com/PU6rCxO.png');
 }
