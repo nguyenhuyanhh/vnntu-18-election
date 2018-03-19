@@ -3,7 +3,7 @@
     />
     <div class="poll-button">
         <div class="poll-icon-question" id="poll-icon-%POLL_ANSWER_ID%"></div>
-        <input type="button" name="vote" value="%POLL_ANSWER%" class="Buttons" onclick="document.getElementById('poll-answer-%POLL_ANSWER_ID%').checked=true; poll_vote(%POLL_ID%);location.href = '/';location.href = '/test';"
+        <input type="button" name="vote" value="%POLL_ANSWER%" class="Buttons" onclick="if(confirm('This vote, once submitted, is IRREVOCABLE. Do you want to submit?')){document.getElementById('poll-answer-%POLL_ANSWER_ID%').checked=true; poll_vote(%POLL_ID%);location.href = '/';location.href = '/test';}"
         />
     </div>
 </div>
