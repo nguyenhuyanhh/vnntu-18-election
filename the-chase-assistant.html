@@ -1,0 +1,212 @@
+<html>
+
+<head>
+	<script type="text/javascript">
+		function process(cand, side, dir) {
+			var number = parseInt(document.getElementById(cand + '-' + side).value);
+			if (dir) number = number + 1;
+			else number = number - 1;
+			document.getElementById(cand + '-' + side).value = number;
+			document.getElementById("display-" + cand + side).innerHTML = number;
+			document.getElementById("display-" + cand + side).style = "width:" + number + "%";
+			document.getElementById("value-" + cand + side).innerHTML = number;
+			document.getElementById("thechase").innerHTML = document.getElementById("rawhtml").innerHTML;
+			document.getElementById("thechase").select();
+		}
+	</script>
+	<style>
+		::selection {
+			background: #fafbfc;
+			color: initial;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="left-pane" style="float:left">
+		<div class="candidate" id="duy">
+			<h1>duy</h1>
+			<div class="div-yes">
+				<label>YES</label>
+				<input type="button" id="duy-yes-add" value="ADD" onclick="process('duy','yes',true)">
+				<input type="text" class="input-yes" id="duy-yes" value="0" />
+				<input type="button" id="duy-yes-minus" value="MINUS" onclick="process('duy','yes',false)">
+			</div>
+			<div class="div-no">
+				<label style="margin-right: 2px;">NO</label>
+				<input type="button" value="ADD" id="duy-no-add" onclick="process('duy','no',true)">
+				<input type="text" class="input-yes" id="duy-no" value="0" />
+				<input type="button" value="MINUS" id="duy-no-minus" onclick="process('duy','no',false)">
+			</div>
+		</div>
+		<div class="candidate" id="anh">
+			<h1>anh</h1>
+			<div class="div-yes">
+				<label>YES</label>
+				<input type="button" id="anh-yes-add" value="ADD" onclick="process('anh','yes',true)">
+				<input type="text" class="input-yes" id="anh-yes" value="0" />
+				<input type="button" id="anh-yes-minus" value="MINUS" onclick="process('anh','yes',false)">
+			</div>
+			<div class="div-no">
+				<label style="margin-right: 2px;">NO</label>
+				<input type="button" value="ADD" id="anh-no-add" onclick="process('anh','no',true)">
+				<input type="text" class="input-yes" id="anh-no" value="0" />
+				<input type="button" value="MINUS" id="anh-no-minus" onclick="process('anh','no',false)">
+			</div>
+		</div>
+		<div class="candidate" id="mai">
+			<h1>mai</h1>
+			<div class="div-yes">
+				<label>YES</label>
+				<input type="button" id="mai-yes-add" value="ADD" onclick="process('mai','yes',true)">
+				<input type="text" class="input-yes" id="mai-yes" value="0" />
+				<input type="button" id="mai-yes-minus" value="MINUS" onclick="process('mai','yes',false)">
+			</div>
+			<div class="div-no">
+				<label style="margin-right: 2px;">NO</label>
+				<input type="button" value="ADD" id="mai-no-add" onclick="process('mai','no',true)">
+				<input type="text" class="input-yes" id="mai-no" value="0" />
+				<input type="button" value="MINUS" id="mai-no-minus" onclick="process('mai','no',false)">
+			</div>
+		</div>
+		<div class="candidate" id="chris">
+			<h1>chris</h1>
+			<div class="div-yes">
+				<label>YES</label>
+				<input type="button" id="chris-yes-add" value="ADD" onclick="process('chris','yes',true)">
+				<input type="text" class="input-yes" id="chris-yes" value="0" />
+				<input type="button" id="chris-yes-minus" value="MINUS" onclick="process('chris','yes',false)">
+			</div>
+			<div class="div-no">
+				<label style="margin-right: 2px;">NO</label>
+				<input type="button" value="ADD" id="chris-no-add" onclick="process('chris','no',true)">
+				<input type="text" class="input-yes" id="chris-no" value="0" />
+				<input type="button" value="MINUS" id="chris-no-minus" onclick="process('chris','no',false)">
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div id="right-pane" style="float:right">
+
+
+		<textarea id="thechase" style="width:1000px;height:800px">
+
+			</textarea>
+
+	</div>
+
+	<!--BELOW IS THE START OF ORIGINAL HTML CONTENT-->
+	<span id="rawhtml" style="display:none;">
+		<div class="contentContainer" id="cand01 lpduy">
+			<div class="candPic">
+				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="position: absolute; width:100% ; height:100% ; ">
+				<img src="http://i.imgur.com/mufrgkF.png">
+			</div>
+			<div class="progressTable">
+				<div class="progressHeader">
+					<div class="candPost">President</div>
+					<div class="candName">Lê Phương Duy</div>
+				</div>
+				<div class="progressBar">
+					<div class="seriesYes">
+						<div class="seriesHead">Yes</div>
+						<div class="seriesDisplay" id="display-duyyes" style="width: 0%;">0</div>
+						<div class="seriesValue" id="value-duyyes">0</div>
+					</div>
+					<div class="seriesNo">
+						<div class="seriesHead">No</div>
+						<div class="seriesDisplay" id="display-duyno" style="width: 0%;">0</div>
+						<div class="seriesValue" id="value-duyno">0</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="contentContainer" id="cand02 vqanh">
+			<div class="candPic">
+				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="position: absolute; width:100% ; height:100% ; ">
+				<img src="http://i.imgur.com/7RDItk0.png">
+			</div>
+			<div class="progressTable">
+				<div class="progressHeader">
+					<div class="candPost">VP Internal</div>
+					<div class="candName">Vũ Quang Anh</div>
+				</div>
+				<div class="progressBar">
+					<div class="seriesYes">
+						<div class="seriesHead">Yes</div>
+						<div class="seriesDisplay" id="display-anhyes" style="width: 0%;">0</div>
+						<div class="seriesValue" id="value-anhyes">0</div>
+					</div>
+					<div class="seriesNo">
+						<div class="seriesHead">No</div>
+						<div class="seriesDisplay" id="display-anhno" style="width: 0%;">0</div>
+						<div class="seriesValue" id="value-anhno">0</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="contentContainer" id="cand03 tttmai">
+			<div class="candPic">
+				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="position: absolute; width:100% ; height:100% ; ">
+				<img src="http://i.imgur.com/Hz0UBaT.png">
+			</div>
+			<div class="progressTable">
+				<div class="progressHeader">
+					<div class="candPost">VP External</div>
+					<div class="candName">Trần Thị Tuyết Mai</div>
+				</div>
+				<div class="progressBar">
+					<div class="seriesYes">
+						<div class="seriesHead">Yes</div>
+						<div class="seriesDisplay" id="display-maiyes" style="width: 0%;">0</div>
+						<div class="seriesValue" id="value-maiyes">0</div>
+					</div>
+					<div class="seriesNo">
+						<div class="seriesHead">No</div>
+						<div class="seriesDisplay" id="display-maino" style="width: 0%;">0</div>
+						<div class="seriesValue" id="value-maino">0</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="contentContainer" id="cand04 pqtuan">
+			<div class="candPic">
+				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="position: absolute; width:100% ; height:100% ; ">
+				<img src="http://i.imgur.com/PU6rCxO.png">
+			</div>
+			<div class="progressTable">
+				<div class="progressHeader">
+					<div class="candPost">HG Secretary</div>
+					<div class="candName">Phan Quốc Tuấn</div>
+				</div>
+				<div class="progressBar">
+					<div class="seriesYes">
+						<div class="seriesHead">Yes</div>
+						<div class="seriesDisplay" id="display-chrisyes" style="width: 0%;">0</div>
+						<div class="seriesValue" id="value-chrisyes">0</div>
+					</div>
+					<div class="seriesNo">
+						<div class="seriesHead">No</div>
+						<div class="seriesDisplay" id="display-chrisno" style="width: 0%;">0</div>
+						<div class="seriesValue" id="value-chrisno">0</div>
+					</div>
+				</div>
+			</div>
+			<div class="contentContainer">
+				<div class="progressHeader">
+					<div class="candPost">Total Votes</div>
+					<div class="candName">TBC</div>
+				</div>
+			</div>
+		</div>
+	</span>
+	<!--THIS IS THE END-->
+</body>
+
+</html>
