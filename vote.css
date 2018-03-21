@@ -108,3 +108,16 @@ input.input-radio {
 #poll-icon-48, #poll-icon-49, #poll-icon-51 {
     background-image: url('http://i.imgur.com/PU6rCxO.png');
 }
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+    .wp-polls-table-qn-20, .wp-polls-table-qn-21, .wp-polls-table-qn-22 {
+        max-width: 200px;
+    }
+    .wp-poll-cell {
+        display: block;
+    }
+    .wp-poll-cell-20, .wp-poll-cell-21, .wp-poll-cell-22 {
+        width: 100%;
+    }
+}
